@@ -37,3 +37,18 @@
 
 //FIGURE OUT HOW TO INSERT PICTURE TO SHOW RELATIONSHIP MAP BETWEEN THE MODELS
 
+
+
+// BRONZE PLAN:
+// build a functioning api that meets the hard requirements: 3 models, use express
+// and mongoose, implement CRUD functionality, deploy to heroku, etc.
+
+
+//SILVER PLAN:
+//create a fourth model
+//seed the database? unless this is a requirement? check
+
+
+//GOLD PLAN:
+//add css and style the webpage
+// maybe do some front-end stuff like the pokedex lab
