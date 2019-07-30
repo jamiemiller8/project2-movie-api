@@ -1,0 +1,23 @@
+{
+  "name": "project2-movie-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamiemiller8/project2-movie-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamiemiller8/project2-movie-api/issues"
+  },
+  "homepage": "https://github.com/jamiemiller8/project2-movie-api#readme"
+}
