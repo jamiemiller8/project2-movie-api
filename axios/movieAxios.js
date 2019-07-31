@@ -11,7 +11,7 @@ axios.get('https://api.themoviedb.org/4/list/27?page=1&api_key=91d8f6047bd78cea2
         if (err) {
             console.error(err);
         } else {
-            console.log("successfully wrote records to db/data.json");
+            console.log("successfully wrote records to db/movie.json");
         }
     })
 })
