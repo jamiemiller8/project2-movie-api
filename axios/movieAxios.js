@@ -1,13 +1,13 @@
 const axios = require('axios');
 const fs = require('fs');
 
-axios.get('API URL')
+axios.get('https://api.themoviedb.org/4/list/27?page=1&api_key=91d8f6047bd78cea27290405a4b8fd68&size=50')
 .then(response => {
     //handle success
     console.log(response.data);
     let stringified = JSON.stringify(response.data);
     console.log(stringified);
-    fs.writeFile('./data/json', stringified, err => {
+    fs.writeFile('./movie.json', stringified, err => {
         if (err) {
             console.error(err);
         } else {
