@@ -57,11 +57,18 @@
 //API Key:
 // 91d8f6047bd78cea27290405a4b8fd68
 
-//Example API Request with Full Link:
+//Example API Request with Full Link: -ONLY SHOWS 1 MOVIE
 // https://api.themoviedb.org/3/movie/550?api_key=91d8f6047bd78cea27290405a4b8fd68
 
 //API Access Read Token
 // eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MWQ4ZjYwNDdiZDc4Y2VhMjcyOTA0MDVhNGI4ZmQ2OCIsInN1YiI6IjVkNDE5NmMwYjg3YWVjN2YwZjM5ZDU0NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.lj-myKZH658zj9KiFlCaAvBp6osrS-7lOft_Rci2-94
 
 
-// note: for the time being, just use fetch until you can figure out axios
+//ACTUAL FULL API URLS
+
+//THIS ONE LIST TOP 5 MOVIES
+https://api.themoviedb.org/4/list/27?page=1&api_key=91d8f6047bd78cea27290405a4b8fd68&size=50
+
+//THIS ONE LISTS THE GENRES
+https://api.themoviedb.org/3/genre/movie/list?api_key=91d8f6047bd78cea27290405a4b8fd68&language=en-US
+
