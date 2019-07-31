@@ -67,10 +67,10 @@
 //ACTUAL FULL API URLS
 
 //THIS ONE LIST TOP 5 MOVIES
-https://api.themoviedb.org/4/list/27?page=1&api_key=91d8f6047bd78cea27290405a4b8fd68&size=50
+"https://api.themoviedb.org/4/list/27?page=1&api_key=91d8f6047bd78cea27290405a4b8fd68&size=50"
 
 //THIS ONE LISTS THE GENRES
-https://api.themoviedb.org/3/genre/movie/list?api_key=91d8f6047bd78cea27290405a4b8fd68&language=en-US
+"https://api.themoviedb.org/3/genre/movie/list?api_key=91d8f6047bd78cea27290405a4b8fd68&language=en-US"
 
 
 
