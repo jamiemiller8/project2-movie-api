@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const movieController = require("../controllers/movie");
 
-// get movie
+// get list of movies
 router.get('/', movieController.index);
 
 // get movie by id
