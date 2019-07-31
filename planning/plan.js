@@ -46,7 +46,6 @@
 
 //SILVER PLAN:
 //create a fourth model
-//seed the database? unless this is a requirement? check
 
 
 //GOLD PLAN:
@@ -54,7 +53,7 @@
 // maybe do some front-end stuff like the pokedex lab
 
 
-//API Key:
+//API Key: *******
 // 91d8f6047bd78cea27290405a4b8fd68
 
 //Example API Request with Full Link: -ONLY SHOWS 1 MOVIE
@@ -66,11 +65,23 @@
 
 //ACTUAL FULL API URLS
 
-//THIS ONE LIST TOP 5 MOVIES
+//THIS ONE LISTS 5 MOVIES - MAYBE FROM OSCARS 2008? Might need to switch
 "https://api.themoviedb.org/4/list/27?page=1&api_key=91d8f6047bd78cea27290405a4b8fd68&size=50"
 
 //THIS ONE LISTS THE GENRES
 "https://api.themoviedb.org/3/genre/movie/list?api_key=91d8f6047bd78cea27290405a4b8fd68&language=en-US"
 
+//THIS ONE LISTS MOST POPULAR PEOPLE/ACTORS
+"https://api.themoviedb.org/3/person/popular?api_key=91d8f6047bd78cea27290405a4b8fd68&language=en-US&page=1"
 
 
+
+
+///OTHER API LINKS:
+
+//this one gives top 50 grossing movies of all time:
+// https://api.themoviedb.org/4/list/10?page=1&api_key=91d8f6047bd78cea27290405a4b8fd68
+
+
+// this one lists the most popular people/actors..but there's so many of them listed
+// https://api.themoviedb.org/3/person/popular?api_key=91d8f6047bd78cea27290405a4b8fd68&language=en-US&page=1

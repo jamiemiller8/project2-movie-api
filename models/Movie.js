@@ -6,10 +6,10 @@ const MovieSchema = new Schema ({
     title: String,
     popularity: Number,
     original_language: String,
-    genres: {
+    genres: [{
         type: Schema.Types.ObjectId,
-        ref: "Name"
-    },
+        ref: "GenreSchema"
+    }],
     release_date: String,
     run_time: Number, 
     revenue: Number,
