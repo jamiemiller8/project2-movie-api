@@ -2,11 +2,16 @@ const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
 const PersonSchema = new Schema ({
-    id: Number,
-    name: String,
-    gender: String,
-    birthday: String,
-    biography: String
+    results:[{
+        name: String,
+        known_for:[{
+            id: Number,
+            title: String,
+            genre_ids:[{
+                type: Number
+            }]
+        }]
+    }]
 });
 
 
