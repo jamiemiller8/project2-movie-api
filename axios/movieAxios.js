@@ -7,7 +7,7 @@ axios.get('https://api.themoviedb.org/4/list/27?page=1&api_key=91d8f6047bd78cea2
     console.log(response.data.results);
     let stringified = JSON.stringify(response.data.results);
     console.log(stringified);
-    fs.writeFile('./movie1.json', stringified, err => {
+    fs.writeFile('./movie.json', stringified, err => {
         if (err) {
             console.error(err);
         } else {
