@@ -8,7 +8,7 @@ const MovieSchema = new Schema ({
     original_language: String,
     genres: [{
         type: Schema.Types.ObjectId,
-        ref: "GenreSchema"
+        ref: "Genre"
     }],
     release_date: String,
     run_time: Number, 

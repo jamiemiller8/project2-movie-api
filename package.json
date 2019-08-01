@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/jamiemiller8/project2-movie-api/issues"
   },
-  "homepage": "https://github.com/jamiemiller8/project2-movie-api#readme"
+  "homepage": "https://github.com/jamiemiller8/project2-movie-api#readme",
+  "keywords": []
 }
