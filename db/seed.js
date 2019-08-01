@@ -48,6 +48,7 @@ const moviesArray = movies.map(singleMovie => {
     newMovie.tagline = singleMovie.tagline,
     newMovie.budget = singleMovie.budget,
     newMovie.overview = singleMovie.overview
+    return newMovie
 });
 
 Movie.find({}).remove(() => 
