@@ -1,6 +1,13 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/project2-movie-api", {useNewUrlParser: true});
+mongoose
+.connect("mongodb://localhost/project2-movie-api", {useNewUrlParser: true})
+.then(conn => {
+    console.log(`connected to mongodb on ${conn.connections[0].name} db`);
+})
+.catch(err => {
+    console.error(err);
+});
 
 mongoose.Promise = Promise; 
 
