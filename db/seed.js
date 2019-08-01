@@ -51,3 +51,6 @@ Movie.collection.insert(moviesArray)
         console.log(err);
     })
 );
+
+///need to add a for loop/ for each in order to link the ref in the model 
+
