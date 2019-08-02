@@ -92,3 +92,5 @@
 
 // https://jamies-node-app.herokuapp.com/ ----> heroku deployed link
 // https://github.com/jamiemiller8/project2-movie-api ----> my github link 
+// https://youtu.be/yyVsTnoZWzU ----> youtube screencast link
+// https://vimeo.com/351624690 ----> same thing but screencast with vimeo / was testing both
