@@ -3,49 +3,76 @@ const Movie = require('../models/Movie');
 const Person = require('../models/Person');
 
 const genres = require('../data.json');
-const movies = require('../movie.json');
+const movies = require('../movie.json')[0].results;
 const people = require('../person.json');
 
+// let movie = new Movie({id: 1, title: 'Test'})
 
-// Person.deleteMany({}).then(Person.create(people))
-// Genre.deleteMany({}).then(Genre.create(genres))
+// movie.save(() => {
+//     let genre = new Genre({id: 7, name: 'TestGenre', movies: [movie._id]});
+//     genre.save();
+// })
 
-people.results.forEach(result => {
-    result.known_for.forEach(known => {
-        genres.genres.forEach(genre => {
-            if(known.genre_ids.includes(genre.id)){
-                Person.find({name: people.name})
-    
-   
-            }})})})
+// Movie.findOne({title: 'No Country for Old Men'})
+//      .populate('genres')
+//      .exec((err, movie) =>{
+//          console.log(movie)
+//      })
 
+// Genre.findOne({name: 'TestGenre'})
+//      .populate('movies')
+//      .exec((err, genre) => {
+//          console.log(genre)
+//      })
 
-
-
-// console.log()
-// console.log()
-
-// Genre.find({}).remove (() =>
-// Genre.collection.insert(genres)
-//     .then(genres => {
-//         console.log(genres);
+// Movie.find({}).remove(() => {
+//     Genre.find({}).remove(() => {
+//         Genre.collection.insert(genres.genres)
+//             .then(genres => {
+//                 Movie.collection.insertMany(movies).then(movies => {
+//                     console.log('movies')
+//                     console.log(movies.ops)
+//                     Movie.find({}).then(foundMovies => {
+//                         foundMovies.forEach(movie => {
+//                             console.log('foundMovie')
+//                             console.log(movie)
+//                             movie.genres = movie.genres.map(genre => {
+//                                 return Genre.findOne({id: genre}).exec((err, genre) => genre)
+//                             })
+//                             movie.save();
+//                         })
+//                     })
+                    // Movie.findOne({title: 'No Country for Old Men'})
+                    //                 .populate('genres')
+                    //                 .exec((err, movie) => {
+                    //                     console.log('movie')
+                    //                     console.log(movie)
+                    //                 })
+                    // Genre.findOne({name: 'Action'})
+                    //      .exec((err, genre) => {
+                    //          console.log(genre)
+                    //      })
+                    // Movie.findOne({title: 'No Country for Old Men'})
+                    //      .exec((err, movie) => {
+                    //          console.log(movie)
+                    //      })
+//                 })
+//             })
+//             .catch(err => {
+//                 console.log(err);
+//             })
 //     })
-//     .catch(err => {
-//         console.log(err);
-//     })
-// );
+// })
 
-// Person.find({}).remove (() =>
-// Person.collection.insert(people)
-//     .then(people => {
-//         console.log(people);
-//     })
-//     .catch(err => {
-//         console.log(err);
-//     })
-// );
 
-// const moviesArray = movies.map(singleMovie => {
+// Genre.findOne({name: 'Action'})
+//      .populate('movies')
+//      .exec((err, genre) => {
+//          console.log('ACTUAL')
+//          console.log(genre)
+//      })
+
+// const moviesArray = movies[0].results.map(singleMovie => {
 //     const newMovie = {}
 //     newMovie.id = singleMovie.id,
 //     newMovie.title = singleMovie.title,
@@ -64,7 +91,26 @@ people.results.forEach(result => {
 // Movie.find({}).remove(() => 
 // Movie.collection.insert(moviesArray)
 //     .then(movies => {
-//         console.log(moviesArray);
+//         console.log('Inserting movies')
+//         console.log(movies);
+//     })
+//     .catch(err => {
+//         console.log(err);
+//     })
+// );
+
+// console.log('HEYEYEYEYEY')
+// let movie = Movie.findOne({'title': 'No Country for Old Men'}, (err, movie) => movie)
+// console.log(movie)
+
+// moviesArray.each
+//     save movie into DB
+// end
+
+// Person.find({}).remove (() =>
+// Person.collection.insert(people)
+//     .then(people => {
+//         console.log(people);
 //     })
 //     .catch(err => {
 //         console.log(err);
@@ -72,6 +118,9 @@ people.results.forEach(result => {
 // );
 
 
+
+
+// console.log(Movie.findById(7326).then(movie => res.json(movie)))
 ///need to add a for loop/ for each in order to link the ref in the model 
 
 // Movie.find({}).then(movies => {

@@ -2,10 +2,12 @@ const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
 const GenreSchema = new Schema ({
-    genres:[{
         id: Number,
-        name: String
-    }]
+        name: String,
+        movies: [{
+            type: Schema.Types.ObjectId,
+            ref: "Movie"
+        }]
 })
 
 
