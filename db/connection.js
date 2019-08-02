@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-.connect("mongodb://localhost/project2-movie-api", {useNewUrlParser: true})
+.connect(process.env.DB_URL, {useNewUrlParser: true})
 .then(conn => {
     console.log(`connected to mongodb on ${conn.connections[0].name} db`);
 })
