@@ -24,13 +24,6 @@ const MovieSchema = new Schema ({
 
 ```
 
-
-## Documentation
-
-
-
-
-
 ## Installing
 - Fork this repository
 - Clone it down to your local repository and open in text editor
