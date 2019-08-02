@@ -88,4 +88,7 @@
 
 
 
+//LINKS TO SUBMITT PROJECT:
+
 // https://jamies-node-app.herokuapp.com/ ----> heroku deployed link
+// https://github.com/jamiemiller8/project2-movie-api ----> my github link 
