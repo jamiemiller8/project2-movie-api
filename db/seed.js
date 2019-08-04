@@ -1,10 +1,10 @@
-const Genre = require('../models/Genre');
-const Movie = require('../models/Movie');
-const Person = require('../models/Person');
+// const Genre = require('../models/Genre');
+// const Movie = require('../models/Movie');
+// const Person = require('../models/Person');
 
-const genres = require('../data.json');
-const movies = require('../movie.json')[0].results;
-const people = require('../person.json');
+// const genres = require('../data.json');
+// const movies = require('../movie.json')[0].results;
+// const people = require('../person.json');
 
 // let movie = new Movie({id: 1, title: 'Test'})
 
