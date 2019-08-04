@@ -9,8 +9,8 @@ if (process.env.NODE_ENV === "production") {
 }
 
 mongoose.connect(mongoURI, { useNewUrlParser: true})
-.then((conn) => {
-    console.log(`connected to mongodb on ${conn.connections[0].name} db`);
+.then((instance) => {
+    console.log(`connected to mongodb on ${instance.connections[0].name} db`);
 })
 .catch(err => {
     console.error(err);

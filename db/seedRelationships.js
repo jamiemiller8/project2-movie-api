@@ -1,3 +1,5 @@
+require('./connection')
+
 const Genre = require('../models/Genre');
 const Movie = require('../models/Movie');
 
