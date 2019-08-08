@@ -2,7 +2,7 @@ const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
 const MovieSchema = new Schema ({
-    id: Number,
+    //id: Number,
     title: String,
     popularity: Number,
     original_language: String,
@@ -11,11 +11,11 @@ const MovieSchema = new Schema ({
         ref: "Genre"
     }],
     release_date: String,
-    run_time: Number, 
-    revenue: Number,
-    tagline: String,
-    budget: Number,
-    overview: String
+    //run_time: Number, 
+    //revenue: Number,
+    //tagline: String,
+    //budget: Number,
+    //overview: String
 });
 
 
