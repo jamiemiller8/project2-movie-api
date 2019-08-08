@@ -6,14 +6,15 @@ const Movie = require('../models/Movie');
 let genres = require('../data.json');
 let movies = require('../movie.json').results;
 
-movies[movies.indexOf(movie)].genres = Object.values(genre)[1]
+// movies[movies.indexOf(movie)].genres = Object.values(genre)[1]
+
 // for each movie genre id =>
 // map genre => 
 movies.forEach(movie => {
 (movie.genre_ids.forEach(id => {
         genres.genres.forEach(genre => {
             if (Object.values(genre)[0]===(id)) {
-                console.log('success' + Object.values(genre)[1])
+                Object.values(genre)[1]
             }
         })
     })
